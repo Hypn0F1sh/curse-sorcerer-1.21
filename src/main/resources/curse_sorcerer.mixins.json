@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.hypn0f1sh.curse_sorcerer.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

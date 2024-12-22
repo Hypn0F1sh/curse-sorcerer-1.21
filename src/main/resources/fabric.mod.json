@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "curse_sorcerer",
+	"version": "${version}",
+	"name": "Curse Sorcerer",
+	"description": "Simple Curse Mod",
+	"authors": [
+		"Hypn0F1sh"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/curse_sorcerer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hypn0f1sh.curse_sorcerer.CurseSorcerer"
+		],
+		"fabric-datagen": [
+			"net.hypn0f1sh.curse_sorcerer.CurseSorcererDataGenerator"
+		],
+		"client": [
+			"net.hypn0f1sh.curse_sorcerer.CurseSorcererClient"
+		]
+	},
+	"mixins": [
+		"curse_sorcerer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
